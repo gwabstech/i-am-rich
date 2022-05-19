@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
+      /** app bar with title and background and foreground color */
       appBar: AppBar(
         title: const Text('I am Rich'),
         centerTitle: true,
@@ -16,8 +17,7 @@ void main() {
       body: SizedBox(
           child: Center(
               child: Image(
-        image: NetworkImage(
-            'https://www.w3schools.blog/wp-content/uploads/2019/10/word-image-155.png'),
+        image: AssetImage('images/diamond.png'),
       ))),
     ),
   ));
